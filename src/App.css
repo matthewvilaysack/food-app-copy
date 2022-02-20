@@ -1,4 +1,9 @@
+* {
+	box-sizing: border-box;
+	font-size: 16px;
+}
 .app {
+	position: relative;
 	display: flex;
 	height: 100vh;
 	flex-direction: column;
@@ -11,9 +16,11 @@
 	width: 500px;
 	height: 500px;
 	border: 1px solid #000;
+	display: flex;
 }
+
 .opening-page {
-	/*display: flex;*/
+	display: flex;
 	justify-content: center;
 	align-items: center;
 }
@@ -22,6 +29,25 @@
 	justify-content: center;
 	align-items: center;
 }
+
+/* food info (ONLY SHOW WHEN FOOD IS DETECTED)*/
+.food-info-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.food-info-container h1 {
+	text-align: center;
+	font-size: 2rem;
+}
+.food-info-container__body {
+	height: 10rem;
+	background-color: white;
+	border: 1px solid #000;
+	display: flex;
+	color: white;
+}
+
 .btn {
 	cursor: pointer;
 	display: flex;
@@ -36,5 +62,7 @@
 	-webkit-transition: background-color 0.1s, color 0.1s;
 }
 .app__input {
-	margin-top: 10px;
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
 }

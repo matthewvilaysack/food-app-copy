@@ -33,11 +33,12 @@ function App() {
 		<div className="app">
 			<div className="opening-page" style = {{display: !playing ? 'block' : 'none'}}>
 				<div className="opening-page__container">
-					<h1 className="font-medium leading-tight text-5xl mt-0 mb-2 bg-black">welkmcsoadmdkos</h1>
+					<h1 className="font-medium leading-tight text-5xl mt-0 mb-2 bg-black"></h1>
 					<a className="btn" onClick= {startVideo}>Click here to learn more!</a>
 				</div>
 			</div>
 			<div className="app__container" style = {{display: playing ? 'block' : 'none'}}>
+			<div className="video-container">
 				<video
 					height={HEIGHT}
 					width={WIDTH}
@@ -46,11 +47,20 @@ function App() {
 					className="app__videoFeed"
 				></video>
 			</div>
+				<div className="food-info-container">
+					<div className="header">
+						<h1>Food</h1>
+					</div>
+					<div className="food-info-container__body">
+						<div className="p">fun fact! fun facts!</div>
+					</div>
+				</div>
+			</div>
 			<div className="app__input" style = {{display: playing ? 'block' : 'none'}}>
 				{playing ? (
-					<button onClick={stopVideo}>Stop</button>
+					<button class="stop-start-btn" onClick={stopVideo}>Stop</button>
 				) : (
-					<button onClick={startVideo}>Start</button>
+					<button class="stop-start-btn" onClick={startVideo}>Start</button>
 				)}
 			</div>
 		</div>
