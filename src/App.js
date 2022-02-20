@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import './App.css';
 
 function App() {
@@ -31,14 +31,13 @@ function App() {
 
 	return (
 		<div className="app">
-			<div className="opening-page">
-				<div class="opening-page__container">
-					<h1 class="font-medium leading-tight text-5xl mt-0 mb-2 bg-black">welkmcsoadmdkos</h1>
-					<a class="btn" href="">Click here to learn more!</a>
+			<div className="opening-page" style = {{display: !playing ? 'block' : 'none'}}>
+				<div className="opening-page__container">
+					<h1 className="font-medium leading-tight text-5xl mt-0 mb-2 bg-black">welkmcsoadmdkos</h1>
+					<a className="btn" onClick= {startVideo}>Click here to learn more!</a>
 				</div>
-				
 			</div>
-			<div className="app__container">
+			<div className="app__container" style = {{display: playing ? 'block' : 'none'}}>
 				<video
 					height={HEIGHT}
 					width={WIDTH}
@@ -47,7 +46,7 @@ function App() {
 					className="app__videoFeed"
 				></video>
 			</div>
-			<div className="app__input">
+			<div className="app__input" style = {{display: playing ? 'block' : 'none'}}>
 				{playing ? (
 					<button onClick={stopVideo}>Stop</button>
 				) : (

@@ -1,5 +1,6 @@
 .app {
 	display: flex;
+	height: 100vh;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -12,12 +13,14 @@
 	border: 1px solid #000;
 }
 .opening-page {
+	/*display: flex;*/
 	justify-content: center;
-	display: flex;
+	align-items: center;
 }
 .opening-page__container {
-	justify-content: center;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .btn {
 	cursor: pointer;
