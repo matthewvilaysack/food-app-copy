@@ -1,0 +1,37 @@
+.app {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.app__container {
+	margin-top: 10px;
+	width: 500px;
+	height: 500px;
+	border: 1px solid #000;
+}
+.opening-page {
+	justify-content: center;
+	display: flex;
+}
+.opening-page__container {
+	justify-content: center;
+	display: flex;
+}
+.btn {
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	display: inline-block;
+	padding: 10px 20px;
+	border: 1px solid;
+	border-radius: 4px;
+	background: rgb(110, 198, 198);
+	color: #fff;
+	font-family: arial;
+	-webkit-transition: background-color 0.1s, color 0.1s;
+}
+.app__input {
+	margin-top: 10px;
+}
